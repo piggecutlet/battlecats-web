@@ -15,6 +15,12 @@
         "quoteProps": "preserve",
         "trailingComma": "none"
       }
+    },
+    {
+      "files": "knip.jsonc",
+      "options": {
+        "trailingComma": "none"
+      }
     }
   ]
 }

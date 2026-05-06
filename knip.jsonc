@@ -1,0 +1,15 @@
+// ドキュメント: https://knip.dev/reference/configuration
+{
+  // ※ JSON と JSONC でスキーマの URL が異なる
+  "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+
+  // プラグインによって Next の設定が自動で追加されている
+  // ドキュメント: https://knip.dev/reference/plugins/next
+
+  "ignoreBinaries": [
+    // package.json の preinstall で使用
+    // パッケージマネージャーを pnpm に固定
+    // ドキュメント: https://pnpm.io/only-allow-pnpm
+    "only-allow"
+  ]
+}
