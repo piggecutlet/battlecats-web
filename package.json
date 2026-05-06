@@ -8,7 +8,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "knip": "knip",
+    "knip:fix": "knip --fix-type exports --fix-type types",
+    "lint": "eslint \"**/*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}\"",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --write '**/*.{cjs,css,cts,html,js,json,json5,jsonc,jsx,md,mdc,mjs,mts,ts,tsx,yaml,yml}'",
+    "fix": "pnpm knip:fix && pnpm lint:fix && pnpm format"
   },
   "dependencies": {
     "next": "16.2.4",
