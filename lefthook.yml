@@ -1,0 +1,11 @@
+# ドキュメント: https://lefthook.dev/configuration/
+pre-commit:
+  commands:
+    eslint:
+      glob: "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}"
+      run: pnpm eslint --fix {staged_files}
+      stage_fixed: true
+    prettier:
+      glob: "*.{cjs,css,cts,html,js,json,json5,jsonc,jsx,md,mdc,mjs,mts,ts,tsx,yaml,yml}"
+      run: pnpm prettier --write {staged_files}
+      stage_fixed: true
