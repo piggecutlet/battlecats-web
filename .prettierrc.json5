@@ -1,0 +1,20 @@
+// ドキュメント: https://prettier.io/docs/options
+{
+  "$schema": "https://www.schemastore.org/prettierrc.json",
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.mdc",
+      "options": {
+        "parser": "markdown"
+      }
+    },
+    {
+      "files": ".prettierrc.json5",
+      "options": {
+        "quoteProps": "preserve",
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
