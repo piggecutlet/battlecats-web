@@ -22,6 +22,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "eslint-plugin-perfectionist": "^5.9.0",
+    "knip": "^6.11.0",
     "lefthook": "^2.1.6",
     "prettier": "^3.8.3",
     "typescript": "^5"
